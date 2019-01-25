@@ -1,0 +1,8 @@
+# project
+.vagrant
+.vscode
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
