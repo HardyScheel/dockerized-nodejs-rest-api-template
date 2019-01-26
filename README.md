@@ -94,6 +94,12 @@ You can find more APIs if you look at the code.
 
 *Feel free to contribute or contact me.*
 
+## Further reading
+
+- [Official for Node.js Docker Image on GitHub](https://github.com/nodejs/docker-node){:target="_blank"}
+- [Docker and Node.js Best Practices](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md){:target="_blank"}
+- [Official Node.js Docker Image on Docker Hub](https://hub.docker.com/_/node/){:target="_blank"}
+
 ## License
 
-See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+See the [LICENSE](LICENSE){:target="_blank"} file for license rights and limitations (MIT).
