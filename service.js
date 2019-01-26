@@ -1,7 +1,7 @@
 // Imports
 const url = require('url');
 
-exports.sampleRequest = function (req, res) {
+exports.namesRequest = function (req, res) {
     const reqURL = url.parse(req.url, true);
     var name = 'World';
 
