@@ -13,7 +13,13 @@ You can run your Node.js app with or without Docker. If you publish your app wit
 If you made any changes to your code or in the `package.json` file run the following command to make sure your Node.js app is configured well to publish it with Docker:
 
 ~~~
-$ npm install
+    $ npm install
+~~~
+
+For production usage:
+
+~~~
+    $ npm install --only=production
 ~~~
 
 ## Building your Docker image
