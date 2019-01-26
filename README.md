@@ -1,6 +1,6 @@
 # dockerized-rest-api-example
 
-A Node.js RESTful API app running on Docker. The included REST API examples are for testing ONLY, and NOT "*production ready*" yet!
+**A Node.js RESTful API app running on Docker. The included REST API examples are for testing ONLY, and NOT "*production ready*" yet!**
 
 This Node.js application is a small barebone written with pure JavaScript (ES6) and without any dependencies or frameworks. It's a good starting point for you to just go further and to build your own app.
 
