@@ -109,7 +109,7 @@ Press CTRL + C
 
 ## Test the RESTful APIs
 
-You'll need the public port of your Docker container. This port you've already stated above `(Port: 44444)`. You can also type `$ docker ps` to find out the current port. Now you can use your a web browser, [cURL](https://curl.haxx.se/){:target="_blank"} as a command line tool or a professional API development tool like [Postman](https://www.getpostman.com/){:target="_blank"} (it's free for small tasks) to work with the APIs.
+You'll need the public port of your Docker container. This port you've already stated above `(Port: 44444)`. You can also type `$ docker ps` to find out the current port. Now you can use your a web browser, [cURL](https://curl.haxx.se/) as a command line tool or a professional API development tool like [Postman](https://www.getpostman.com/) (it's free for small tasks) to work with the APIs.
 
 With a web browser:
 - `http://localhost:44444` should return *Hello World*.
@@ -132,13 +132,13 @@ You can find more APIs if you look at the code.
 
 ## Further reading
 
-- [Official for Node.js Docker Image on GitHub](https://github.com/nodejs/docker-node){:target="_blank"}
-- [Docker and Node.js Best Practices](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md){:target="_blank"}
-- [Official Node.js Docker Image on Docker Hub](https://hub.docker.com/_/node/){:target="_blank"}
-- [Productive with Docker in 20 minutes](https://engineering.circle.com/productive-with-docker-in-20-minutes-8997297a35bb){:target="_blank"}
+- [Official for Node.js Docker Image on GitHub](https://github.com/nodejs/docker-node)
+- [Docker and Node.js Best Practices](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+- [Official Node.js Docker Image on Docker Hub](https://hub.docker.com/_/node/)
+- [Productive with Docker in 20 minutes](https://engineering.circle.com/productive-with-docker-in-20-minutes-8997297a35bb)
 
-- [HTTPS Authorized Certs with Node.js](https://engineering.circle.com/https-authorized-certs-with-node-js-315e548354a2){:target="_blank"}
+- [HTTPS Authorized Certs with Node.js](https://engineering.circle.com/https-authorized-certs-with-node-js-315e548354a2)
 
 ## License
 
-See the [LICENSE](LICENSE){:target="_blank"} file for license rights and limitations (MIT).
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
