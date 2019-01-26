@@ -15,9 +15,6 @@ RUN npm install
 
 # Bundle app source inside the Docker image
 COPY . .
-#COPY controller.js WORKDIR
-#COPY server.js WORKDIR
-#COPY service.js WORKDIR
 
 # Map Node.js port to Docker deamon
 EXPOSE 8080
