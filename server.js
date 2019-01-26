@@ -4,11 +4,11 @@
 const server = require('./controller.js');
 
 // Constants
-const HOSTNAME = '127.0.0.1';
-const PORT = 3000;
+const PORT = 8080;
+const HOST = '0.0.0.0';
 
 // App
 const app = server;
-app.listen(PORT, HOSTNAME, () => {
-    console.log(`Running on http://${HOSTNAME}:${PORT}/`);
+app.listen(PORT, HOST, () => {
+    console.log(`Running on http://${HOST}:${PORT}/`);
 });
