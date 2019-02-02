@@ -1,16 +1,15 @@
-# The docker-compose DSL syntax format we're using
+# The docker-compose DSL syntax format we're using.
 version: "2.1"
 
-# The containers we want to start and the images to start
-# them from
+# The containers we want to start and the images to start them from.
 services:
 
-  # our basic node server we'll name "basic"
+  # Our basic node server we'll name "basic".
   basic: 
-    # the directory path - relative to this compose file - where
-    # we'll be able to find the Dockerfile
+    # The directory path - relative to this compose file - where
+    # we'll be able to find the Dockerfile.
     build: ./
-    # the port mappings we do so that traffic that docker
-    # will forward from localhost -> container
+    # The port mappings we do so that traffic that docker
+    # will forward from localhost -> container.
     ports:
       - "44444:8080"

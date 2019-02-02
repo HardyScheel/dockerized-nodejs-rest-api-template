@@ -1,14 +1,14 @@
 {
-  "name": "dockerized-rest-api-example",
-  "version": "0.1.0",
-  "description": "Node.js on Docker serving simple RESTful APIs as examples. ONLY for testing, not for production!",
+  "name": "dockerized-nodejs-rest-api-template",
+  "version": "0.1.1",
+  "description": "Node.js on Docker serving simple RESTful APIs.",
   "keywords": [
     "RESTful",
     "API"
   ],
-  "homepage": "https://github.com/hardyscheel/dockerized-rest-api-example#readme",
+  "homepage": "https://github.com/hardyscheel/dockerized-nodejs-rest-api-template#readme",
   "bugs": {
-    "url": "https://github.com/hardyscheel/dockerized-rest-api-example/issues",
+    "url": "https://github.com/hardyscheel/dockerized-nodejs-rest-api-template/issues",
     "email": "hardy.scheel@gmail.com"
   },
   "license": "MIT",
@@ -20,7 +20,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hardyscheel/dockerized-rest-api-example.git"
+    "url": "https://github.com/hardyscheel/dockerized-nodejs-rest-api-template.git"
   },
   "scripts": {
     "start": "node server.js"

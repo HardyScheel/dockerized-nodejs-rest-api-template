@@ -1,16 +1,16 @@
-# dockerized-rest-api-example
+# dockerized-nodejs-rest-api-example
 
-**A Node.js RESTful API app running on Docker. The included REST API examples are for testing ONLY, and NOT "*production ready*" yet!**
+**A Node.js RESTful API app running on Docker. The included REST API examples are for testing and development ONLY. Adjust the config files to configure it "*production ready*"!**
 
-This Node.js application is a small barebone written with pure JavaScript (ES6) and without any dependencies or frameworks. It's a good starting point for you to just go further and to build your own app.
+This Node.js application is a small barebone written in pure JavaScript (ES6) and without any dependencies or frameworks. It's a good starting point for you to just go further and to build your own app.
 
-You'll get your own app running in a Docker container with Node.js without any heavy customization in the configuration files. I left many comments in all configuration files to make changes easy for you.
+You'll get your own app running in a Docker container with Node.js without any heavy customization in the configuration files. I left many comments in all configuration files to make changes as easy as possible for you.
 
-You can run your Node.js app with or without Docker. If you publish your app with Docker make sure you follow at least the first steps below. The included RESTful API example is not production ready yet. But the Docker and Node.js setup is. You can find a Node.js "production ready" switch in the `Dockerfile`.
+You can run your Node.js app with or without Docker. If you publish your app with Docker make sure you follow at least the first steps below. The included RESTful API examples are not production ready yet. But the Docker and Node.js setup is. To deploy the container for production you can find a Node.js "production ready" switch in the `Dockerfile`.
 
 I offer two variants of how to build your app with Docker:
-- [Build your app with Docker](#build-your-app-with-docker) -> This is more time consuming variant. But you can configure a lot step by step.
-- [Build your app with Docker Compose](#build-your-app-with-docker-compose) -> Run your app within 2 minutes without configuration.
+- [Build your app with Docker](#build-your-app-with-docker) -> This is the more time consuming variant. But you can configure a lot step by step.
+- [Build your app with Docker Compose](#build-your-app-with-docker-compose) -> Run your app within minutes without configuration.
 
 ### Table of content
 
@@ -27,7 +27,7 @@ I offer two variants of how to build your app with Docker:
 
 ## Prepare your app
 
-If you made any changes to your code or in the `package.json` file run the following command to make sure your Node.js app is configured well to publish it with Docker:
+If you made any changes to your code or in the `package.json` file run the following command after any changes to make sure your Node.js app is configured well to publish it with Docker:
 
 ~~~
     $ npm install
@@ -41,15 +41,15 @@ For production usage:
 
 ## Build your app with Docker
 
-Now we are build the Docker image. In your directory where your `Dockerfile` is, run the following command to build and then import the Docker image.
+Now we build the Docker image. In your directory where your `Dockerfile` is, run the following command to build and then import the Docker image.
 
-- The `-t` flag lets you tag your image with a custom name to find it later easier with `docker images` command.
+- The `-t` flag lets you tag your image with a custom name to find it later easier with the `docker images` command.
 
 ~~~
 $ docker build -t <your name here>/dockerized-rest-api-example .
 ~~~
 
-Check if your newly build image is now listed by Docker:
+Check if your newly built image is now listed by Docker:
 
 ~~~
 $ docker images
@@ -57,13 +57,13 @@ $ docker images
 
 ### Start the container
 
-Let's start the container. The Node.js REST API app inside the container will start automatically every time you start the container again. Here we will map the port `8080` inside of the container to the port `44444` on your local machine or your server, or wherever you've installed Docker with this app.
+Let's start the container. The Node.js REST API app inside the container will start automatically every time you start the container again. Here we will map the port `8080` inside of the container to the outside port `44444` on your local machine or your server, or wherever you've installed Docker with this app.
 
 - The `-p` flag redirects a public port to a private port inside the container.
 - The `-d` flag runs the container in detached mode, leaving the container running in the background.
 
 ~~~
-$ docker run -p 44444:8080 -d <your name here>/dockerized-rest-api-example
+$ docker run -p 44444:8080 -d <your name here>/dockerized-nodejs-rest-api-template
 ~~~
 
 Check if the container is started:
@@ -107,7 +107,7 @@ Stop your app:
 Press CTRL + C
 ~~~
 
-## Test the RESTful APIs
+## Test the API endpoints
 
 You'll need the public port of your Docker container. This port you've already stated above `(Port: 44444)`. You can also type `$ docker ps` to find out the current port. Now you can use your a web browser, [cURL](https://curl.haxx.se/) as a command line tool or a professional API development tool like [Postman](https://www.getpostman.com/) (it's free for small tasks) to work with the APIs.
 
