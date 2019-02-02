@@ -1,4 +1,4 @@
-# dockerized-nodejs-rest-api-example
+# dockerized-nodejs-rest-api-template
 
 **A Node.js RESTful API app running on Docker. The included REST API examples are for testing and development ONLY. Adjust the config files to configure it "*production ready*"!**
 
@@ -46,7 +46,7 @@ Now we build the Docker image. In your directory where your `Dockerfile` is, run
 - The `-t` flag lets you tag your image with a custom name to find it later easier with the `docker images` command.
 
 ~~~
-$ docker build -t <your name here>/dockerized-rest-api-example .
+$ docker build -t <your name here>/dockerized-nodejs-rest-api-template .
 ~~~
 
 Check if your newly built image is now listed by Docker:
